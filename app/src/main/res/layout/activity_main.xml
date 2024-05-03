@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="331dp"
+        android:layout_height="398dp"
+        android:background="@drawable/balon_shape"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myToolbar"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="133dp"
+        android:layout_height="70dp"
+        android:drawableTop="@drawable/baseline_mic_24"
+        android:drawablePadding="8dp"
+        android:elevation="8dp"
+        android:onClick="buttonAssist"
+        android:text="Assist"
+        app:layout_constraintBottom_toTopOf="@+id/TextView"
+        app:layout_constraintEnd_toEndOf="@+id/EditText"
+        app:layout_constraintStart_toStartOf="@+id/EditText"
+        app:layout_constraintTop_toBottomOf="@+id/EditText" />
+
+    <Button
+        android:id="@+id/buttonCopyCode"
+        android:layout_width="64dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:drawableLeft="@drawable/baseline_content_copy_24"
+        android:onClick="copyCode"
+        app:layout_constraintBottom_toTopOf="@+id/TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="360dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="input here."
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myToolbar"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lavender"
+        app:title="Voice Based Assistant"
+        app:titleTextColor="@android:color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "68215951337",
+    "project_id": "voice-based-assistant-4e23a",
+    "storage_bucket": "voice-based-assistant-4e23a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68215951337:android:8b457d9eb3dfd4212a4578",
+        "android_client_info": {
+          "package_name": "com.example.voicebasedassistant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKiDm6aLPQvnOYJ14ijAPv6OidWghqrDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
